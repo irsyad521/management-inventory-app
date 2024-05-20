@@ -11,7 +11,7 @@ pipeline {
         stage('Install Dependencies and build') {
             steps {
                 script {
-                    sh 'npm  install --prefix client && npm run build --prefix client'
+                    sh 'npm  run build'
                 }
             }
         }
